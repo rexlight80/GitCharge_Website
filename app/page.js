@@ -1,103 +1,181 @@
 import Image from "next/image";
+import logoImg from './assets/gitChargeIconTransperentAddOn.png';
+import VideoComponent from "./components/VideoComponent";
+import UpgradetoPro from "./components/UpgradetoPro";
+// import { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import { useSearchParams } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  // const searchParams = useSearchParams();
+  // const reRoute = searchParams.get('reRoute');
+  // const reRouteType = searchParams.get('type');
+  // const[isReRoute, setIsReRoute] = useState(reRoute);
+  // const[isReRouteType, setIsReRouteType] = useState(reRouteType);
+  // const[isLoading, setIsLoading] =  useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  
+
+//   const sendMessageToExtension = async () => {
+//     let extensionId = 'jciofgjiocilnhidmconapjaakcjedhc';
+//             setIsLoading(true)
+//             const response = await axios.get("/api/webhook");
+//             const data = await response.data;
+//             console.log('data', data);
+            
+//             if(Object.values(data)[0].length > 0){
+//               if(isReRouteType !==  "cancel"){
+//                 localStorage.setItem('subscribedId', Object.values(data)[0]);
+//                 localStorage.setItem('subscribedData',  JSON.stringify(data));
+
+//               }
+
+             
+//                 if(window && window.chrome.runtime){
+//                      console.log('runtime', window.chrome.runtime);
+                     
+//                     window.chrome.runtime.sendMessage(extensionId, {...data},
+//                         function(response) {
+//                           if (response.listen == 'heard')
+//                             console.log('resListen', response.listen);
+                            
+//                         });
+//                       }
+//               }
+//               setIsLoading(false);
+//             }
+
+//   useEffect(() => {
+//     if(isReRoute){
+//       sendMessageToExtension();
+//     }
+// },[isReRoute]);
+
+
+  return (
+    <>
+    <section className='w-full flex flex-col items-center gap-[4rem]'>
+        {/* {
+          isLoading &&
+          <LoadingModal reRouteType={isReRouteType}/>
+        } */}
+            <Image src={logoImg} alt='GitCharge_logo' className='xl:w-[8.4375rem] xl:h-[8.4375rem] w-[8rem] h-[8rem]'/>
+            <div className='w-full flex flex-col-reverse xl:flex-row gap-[4rem] items-center justify-between'>
+                <div className='xl:w-1/2 w-full flex flex-col gap-[2rem]'>
+                <ul className='list-disc mx-auto'>
+                    <li className='mt-2 font-medium text-lg'>Simple code review & exploring</li>
+                    <li className='mt-2 font-medium text-lg'>Quick pull request access</li>
+                    <li className='mt-2 font-medium text-lg'>Custom icons & code fonts</li>
+                    <li className='mt-2 font-medium text-lg'>File search</li>
+                    <li className='mt-2 font-medium text-lg'>Summarize code using AI</li>
+                    <li className='mt-2 font-medium text-lg'>Bookmark everything</li>
+                </ul>
+                 <UpgradetoPro/>
+                </div>
+                
+                <VideoComponent src='/extPaySummary.mp4'/>
+            
+
+            </div>
+
+        </section>
+        <section className='flex flex-col justify-center my-[3rem] gap-[1rem] px-[1.5rem]'>
+            <h1 className='font-medium underline text-[2.4rem] '>About</h1>
+             <span className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Gitcharge is an extension that is loaded with features that make Gitlab code review and exploration awesome. It help developers to improve their gitlab workflow and provides features such as pull request review, summarize code using AI, custom code fonts and others bring the Gitlab experience to another level.</span>
+        </section>
+
+        <section className='w-full flex flex-col justify-center my-[2rem] gap-[1rem] px-[1.5rem]'>
+            <h1 className='font-medium underline text-[2.4rem] '>Features</h1>
+             <div className='w-full flex flex-col gap-[2rem] my-[1rem]'>
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem] '>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Fast IDE-like code tree:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Browse repository and related files easily and efficiently through tree structure.</span>
+                    </div>
+                    <VideoComponent src='/treeStruc.mp4'/>
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Bookmark everything:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Bookmark everything such as repos, individual files, merge request and issues.</span>
+                    </div>
+                
+                <VideoComponent src='/bookMarkExt.mp4'/>
+
+                
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Quick pull request access:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Quick access to list of different state of pull requests in a popup.</span>
+                    </div>
+                
+                <VideoComponent src='/pullReqExt2.mp4'/>
+
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Summarize code:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Summarize and explain code down to the key points using AI.</span>
+                    </div>
+                <VideoComponent src='/summarizeExt2.mp4'/>
+
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Custom icons, code fonts & font size:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Customize font, size of code and file icons from provided options.</span>
+                    </div>
+               
+                <VideoComponent src='/extCodeFont.mp4'/>
+
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>File Search:</h1>
+                      <span className='font-[350] text-xl text-wrap'>It provides feauture for searching a particular file.</span>
+                    </div>
+               
+                <VideoComponent src='/searchExt2.mp4'/>
+
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Authentication:</h1>
+                      <span className='font-[350] text-xl text-wrap'>
+                        GitCharge uses Gitlab API to retrieve repository metadata to display in the sidebar. By default, it makes unauthenticated requests to Gitlab. However, Gitlab requires authentication if you access a private repository or exceed the rate limit.
+                        You can authenticate with Gitlab by:
+                        </span>
+
+                        <span className='font-[350] text-xl text-wrap'>
+                        1. Manually input GitHub Personal Access Token:
+                        </span>
+
+                        <span className='font-[350] text-xl text-wrap'>
+                        You can create either a fine-grained token or classic token, then paste it into the token textbox in the extension's Settings screen.
+                         </span>
+                        
+                    </div>
+
+                <VideoComponent src='/accessToken.mp4'/>
+
+                    
+                </div>
+
+             </div>
+        </section>
+    </>
   );
 }
