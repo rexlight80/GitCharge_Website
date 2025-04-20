@@ -164,7 +164,7 @@ export default function Home() {
                         </span>
 
                         <span className='font-[350] text-xl text-wrap'>
-                        You can create either a fine-grained token or classic token, then paste it into the token textbox in the extension's Settings screen.
+                        You can create either a fine-grained token or classic token, then paste it into the token textbox in the extension&apos;s Settings screen.
                          </span>
                         
                     </div>

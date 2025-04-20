@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
             The Extension does not and will never use Google Analytics or any third-party tracking software. The Site does not, but may use Google Analytics and/or third-party tracking software in the future to collect website traffic data that help us improve our service.
             </span>
             <span className='font-normal px-[1rem] text-[1.3rem]'>
-            When using the Extension, GitLab personal access tokens and/or GitLab OAuth tokens might be needed to access private repositories. These tokens are stored in the browser's storage area. The Extension uses these tokens to authenticate the requests with GitLab (https://gitlab.com). We don't and will never store your GitLab tokens on our servers. You must take necessary safeguard to ensure your GitLab tokens are secure.
+            When using the Extension, GitLab personal access tokens and/or GitLab OAuth tokens might be needed to access private repositories. These tokens are stored in the browser&apos;s storage area. The Extension uses these tokens to authenticate the requests with GitLab (https://gitlab.com). We don&apos;t and will never store your GitLab tokens on our servers. You must take necessary safeguard to ensure your GitLab tokens are secure.
             </span>
         </div>
         <div className='w-full h-fit flex flex-col gap-[0.5rem] mt-[1rem]'>

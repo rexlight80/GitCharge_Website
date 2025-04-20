@@ -4,14 +4,9 @@ import Image from "next/image";
 import logoImage from '../assets/gitChargeIconTransperentAddOn.png';
 import checkIcon from '../assets/check_icon.png';
 import PaymentBtn from '../components/PaymentBtn';
-
-
-
-
+import { Suspense } from 'react';
 
 const Payment = () => {
-
-
 
   return (
     <>
@@ -29,8 +24,10 @@ const Payment = () => {
                <span className='xl:text-[1.3rem] tetx-[1rem] font-[400] text-wrap leading-[2rem]'>
                Your subscription helps us continue improving GitCharge as well as updating it to accommodate the frequent changes Gitlab made.
                </span>
+               <Suspense>
+                <PaymentBtn/>
+              </Suspense>
 
-             <PaymentBtn/>
 
             </div>
             <div className='xl:w-1/2 w-full  h-full flex items-center justify-center my-[1.5rem] xl:my-0'>
