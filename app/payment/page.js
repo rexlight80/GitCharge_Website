@@ -24,7 +24,7 @@ const Payment = () => {
             <div className='xl:w-1/2 w-full flex flex-col h-full justify-center gap-[1rem] px-[2.5rem]'>
                <h1 className='xl:text-3xl text-2xl text-[#000] font-medium'>Pricing</h1>
                <span className='xl:text-[1.3rem] text-[1rem] font-[400] text-wrap leading-[2rem]'>
-                  GitCharge is loaded features that make Gitlab code review and exploration awesome. Upgrade to pro features by subscribing for $5.
+                  GitCharge is loaded features that make Gitlab code review and exploration awesome. Upgrade to pro features by subscribing for $6.
                </span>
                <span className='xl:text-[1.3rem] tetx-[1rem] font-[400] text-wrap leading-[2rem]'>
                Your subscription helps us continue improving GitCharge as well as updating it to accommodate the frequent changes Gitlab made.
