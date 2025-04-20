@@ -53,6 +53,9 @@ const Payment = () => {
             <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Bookmark everything</span></div>
             <div className='w-full h-full border-1 border-[#000]'></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7 my-[0.8rem]' alt="check_icon"/></div>
+            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Price</span></div>
+            <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Free</span></div>
+            <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>$6/month</span></div>
 
               </div>
             </div >
