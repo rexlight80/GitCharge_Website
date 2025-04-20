@@ -15,7 +15,9 @@ const Footer = () => {
   return (
     <div className='w-full h-fit p-[1rem] bg-[#3D153D] flex flex-row mt-auto'>
         <div className='w-1/2 flex flex-row items-center justify-center gap-[1rem]'>
+        <Link href='/'>
         <Image src={logoImg} alt='GitCharge_logo' className='xl:w-[6.5rem] xl:h-[6.5rem] w-[5rem] h-[rem]'/>
+        </Link>
         <span className='text-[#fff] font-medium xl:text-3xl text-2xl'>GitCharge</span>
         </div>
         <div className='w-1/2 flex flex-col xl:flex-row items-center gap-[1rem]'>
