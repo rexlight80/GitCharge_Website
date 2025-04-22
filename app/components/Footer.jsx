@@ -29,6 +29,7 @@ const Footer = () => {
               <span className='text-[1.3rem] text-gray-400 font-medium'>Other:</span>
               <Link href="/terms-of-service"><span className='font-normal text-[1.1rem] text-[#fff] '>Terms of service</span></Link>
               <Link href="/privacy-policy"><span className='font-normal text-[1.1rem] text-[#fff]'>Privacy Policy</span></Link>
+              <Link href="/refund-policy"><span className='font-normal text-[1.1rem] text-[#fff]'>Refund Policy</span></Link>
                 
             </div>
         </div>
