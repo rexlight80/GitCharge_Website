@@ -71,7 +71,7 @@ export async function GET(req){
               
           //     return await NextResponse.json({ ...responseHook });
           // }else if(Object.values(responseHook)[2].length > 0){             
-          //     const res = await axios.get(`https://sandbox-api.paddle.com/customers/${Object.values(responseHook)[2]}`, {headers: {Authorization: `Bearer ${process.env.PADDLE_SECRET_TOKEN}`}});
+          //     const res = await axios.get(`https://api.paddle.com/customers/${Object.values(responseHook)[2]}`, {headers: {Authorization: `Bearer ${process.env.PADDLE_SECRET_TOKEN}`}});
           //     const result = await res.data;
           //     return await NextResponse.json({ ...responseHook, email: result.data.email});
           // }else{

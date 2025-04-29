@@ -11,25 +11,7 @@ export async function GET(req){
         items: [
             {
                 quantity:1,
-                price:{
-                    name: "Dynamically generated price",
-                    description: "Dynamically generated description",
-                    billingCycle: {
-                        interval: "month",
-                        frequency: 1,
-                      },
-                    unitPrice:{
-                        currencyCode:'USD',
-                        amount:'599'
-                    },
-                    product:{
-                        name:"Dynamically generated product",
-                        description: "Dynamically generated description",
-                        taxCategory:'saas'
-                    }
-                },
-                
-
+                priceId: process.env.PADDLE_PRICE_ID
             }
         ]
     })
