@@ -53,7 +53,7 @@ useEffect(() => {
                 allowedPaymentMethods: ['alipay', 'apple_pay', 'bancontact','card','google_pay', 'ideal','paypal','saved_payment_methods']
             }
         },
-        environment:'sandbox',
+        environment:'production',
         token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,
         eventCallback: (event) => {
             checkoutEvent(event);

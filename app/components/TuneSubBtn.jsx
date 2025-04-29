@@ -8,7 +8,7 @@ const TuneSubBtn = () => {
     
     useEffect(() => {      
         initializePaddle({
-            environment:'sandbox',
+            environment:'production',
             token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,  
         }).then(paddle => setPaddle(paddle));
     }, []);
