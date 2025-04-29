@@ -3,7 +3,7 @@ import axios from "axios";
 import { NextResponse } from "next/server";
 
 const paddle = new Paddle(process.env.PADDLE_SECRET_TOKEN, {
-    environment: Environment.sandbox
+    environment: Environment.production
 });
 
 let message = { status: ''};
