@@ -112,6 +112,7 @@ useEffect(() => {
 
 
 const checkoutEvent = async (event) => {
+    console.log('checkoutEvent', event);
     
     if(event.name == 'checkout.completed'){
         localStorage.setItem('checkoutCompleted', JSON.stringify(event.data));
