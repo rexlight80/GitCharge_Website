@@ -33,7 +33,7 @@ const TermsOfService = () => {
        <div className='w-full flex flex-col gap-[0.5rem] my-[1rem]'>
           <span className='font-medium px-[1rem] text-[1.4rem]'> Contact</span>
           <span className='font-normal px-[1rem] text-[1.3rem]'>
-          If you have any questions or concerns regarding these Terms of Use, please contact us through our <a className='text-blue-700 underline hover:text-black hover:no-underline ease-linear duration-300 ' href='https://www.facebook.com/profile.php?id=61574003613275'>official facebook page</a>
+          If you have any questions or concerns regarding these Terms of Use, please contact us through our <a className='text-blue-700 underline hover:text-black hover:no-underline ease-linear duration-300 ' href='https://www.facebook.com/profile.php?id=61574003613275' target='_blank'>official facebook page</a>
           </span>
        </div>
       
