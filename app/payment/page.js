@@ -19,7 +19,7 @@ const Payment = () => {
             <div className='xl:w-1/2 w-full flex flex-col h-full justify-center gap-[1rem] px-[2.5rem]'>
                <h1 className='xl:text-3xl text-2xl text-[#000] font-medium'>Pricing</h1>
                <span className='xl:text-[1.3rem] text-[1rem] font-[400] text-wrap leading-[2rem]'>
-                  GitCharge is loaded features that make Gitlab code review and exploration awesome. Upgrade to pro features by subscribing for $6.
+                  GitCharge is loaded features that make Gitlab code review and exploration awesome. Upgrade to pro features by subscribing for $5.99.
                </span>
                <span className='xl:text-[1.3rem] tetx-[1rem] font-[400] text-wrap leading-[2rem]'>
                Your subscription helps us continue improving GitCharge as well as updating it to accommodate the frequent changes Gitlab made.
@@ -35,7 +35,7 @@ const Payment = () => {
             <div className='w-full h-full border-transparent'></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-base xl:text-lg inline-block'>Free</span></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-base xl:text-lg inline-block'>Pro</span></div>
-            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Simple code review & exploring</span></div>
+            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-center text-sm xl:text-base'>Simple code review & exploring</span></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7' alt="check_icon"/></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7' alt="check_icon"/></div>
             <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Quick pull request access</span></div>
@@ -55,7 +55,7 @@ const Payment = () => {
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7 my-[0.8rem]' alt="check_icon"/></div>
             <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Price</span></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Free</span></div>
-            <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>$6/month</span></div>
+            <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>$5.99/month</span></div>
 
               </div>
             </div >
