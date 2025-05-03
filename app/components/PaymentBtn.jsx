@@ -51,15 +51,19 @@ useEffect(() => {
                 theme:'dark',
                 successUrl: `${window.location.origin}/payment?reRoute=true`,
                 allowedPaymentMethods: ['alipay', 'apple_pay', 'bancontact','card','google_pay', 'ideal','paypal','saved_payment_methods']
-            }
+            },
+        
         },
         token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,
+        pwCustomer: Object.values(message).length > 0 ? {
+             id: message.customerId
+        }: {},
         eventCallback: (event) => {
             checkoutEvent(event);
         }
          
     }).then(paddle => setPaddle(paddle));
-}, []);
+}, [message]);
 
 useEffect(() => {
     if(isReRoute){

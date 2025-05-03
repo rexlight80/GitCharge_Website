@@ -7,8 +7,12 @@ const TuneSubBtn = () => {
     const[paddle, setPaddle] = useState();
     
     useEffect(() => {      
+      const checkoutData = JSON.parse(localStorage.getItem('checkoutCompleted'));
         initializePaddle({
-            token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,  
+            token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,
+            pwCustomer: Object.values(checkoutData).length > 0 ? {
+              id:`${checkoutData.customer.id}`
+            }: {}
         }).then(paddle => setPaddle(paddle));
     }, []);
 
