@@ -55,15 +55,27 @@ useEffect(() => {
         
         },
         token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN,
-        pwCustomer: Object.values(message).length > 0 ? {
-             id: message.customerId
-        }: {},
+        // pwCustomer: Object.values(message).length > 0 ? {
+        //      id: message.customerId
+        // }: {},
         eventCallback: (event) => {
             checkoutEvent(event);
         }
          
     }).then(paddle => setPaddle(paddle));
-}, [message]);
+}, []);
+
+useEffect(() => {
+    if(paddle && paddle.Initialized){
+        if(Object.values(message).length > 0){
+            paddle.Update({
+              pwCustomer:{
+                id: message.customerId                  
+               }
+            })
+        }
+    }
+}, [message])
 
 useEffect(() => {
     if(isReRoute){
