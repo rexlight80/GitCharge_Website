@@ -27,15 +27,46 @@ const[message, setMessage] = useState({});
 //     })()
 //   }, [])
 
+const detectBrowser = () => {
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.indexOf("Edg") > -1) {
+        return "Microsoft Edge";
+    } else if (userAgent.indexOf("Chrome") > -1) {
+        return "Chrome";
+    } else if (userAgent.indexOf("Firefox") > -1) {
+        return "Firefox";
+    } else if (userAgent.indexOf("Safari") > -1) {
+        return "Safari";
+    } else if (userAgent.indexOf("Opera") > -1) {
+        return "Opera";
+    } else if (userAgent.indexOf("Trident") > -1 || userAgent.indexOf("MSIE") > -1) {
+        return "Internet Explorer";
+    }
+
+    return "Unknown";
+}
+
   const sendMessageToExtension = async (data) => {
-    let extensionId = 'jciofgjiocilnhidmconapjaakcjedhc';
-        if(window && window.chrome.runtime){
-            window.chrome.runtime.sendMessage(extensionId, {...data},
-                function(response) {
-                  if (response.listen == 'heard'){
-                    console.log('resListen', response.listen);
-                }
-            });
+    if(detectBrowser() == "Chrome"){
+        let extensionId = 'jciofgjiocilnhidmconapjaakcjedhc';
+            if(window && window.chrome.runtime){
+                window.chrome.runtime.sendMessage(extensionId, {...data},
+                    function(response) {
+                      if (response.listen == 'heard'){
+                        console.log('resListen', response.listen);
+                    }
+                });
+            }
+        }else if(detectBrowser() == "Microsoft Edge"){
+            let extensionId = 'ahgfcoomeihgjelddjilmkmopmhpnamg';
+            if(window && window.chrome.runtime){
+                window.chrome.runtime.sendMessage(extensionId, {...data},
+                    function(response) {
+                      if (response.listen == 'heard'){
+                        console.log('resListen', response.listen);
+                    }
+                });
+            }
         }
     }
 
