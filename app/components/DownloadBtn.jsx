@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 import chromeIcon from '../assets/chromeLogo.png';
 import edgeIcon from '../assets/edgeLogo.png';
