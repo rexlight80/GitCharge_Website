@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logoImg from './assets/gitChargeIconTransperentAddOn.png';
 import VideoComponent from "./components/VideoComponent";
-import UpgradetoPro from "./components/UpgradetoPro";
+import DownloadBtn from "./components/DownloadBtn";
 // import { useEffect, useState } from 'react';
 // import axios from 'axios';
 // import { useSearchParams } from "next/navigation";
@@ -61,7 +61,7 @@ export default function Home() {
         } */}
             <Image src={logoImg} alt='GitCharge_logo' className='xl:w-[8.4375rem] xl:h-[8.4375rem] w-[8rem] h-[8rem]'/>
             <div className='w-full flex flex-col-reverse xl:flex-row gap-[4rem] items-center justify-between'>
-                <div className='xl:w-1/2 w-full flex flex-col gap-[2rem]'>
+                <div className='xl:w-1/2 w-full flex flex-col gap-[1.3rem]'>
                 <ul className='list-disc mx-auto'>
                     <li className='mt-2 font-medium text-lg'>Simple code review & exploring</li>
                     <li className='mt-2 font-medium text-lg'>Quick pull request access</li>
@@ -70,7 +70,8 @@ export default function Home() {
                     <li className='mt-2 font-medium text-lg'>Summarize code using AI</li>
                     <li className='mt-2 font-medium text-lg'>Bookmark everything</li>
                 </ul>
-                 <UpgradetoPro/>
+                 <DownloadBtn browser="chrome"/>
+                 <DownloadBtn/>
                 </div>
                 
                 <VideoComponent src='/extPaySummary.mp4'/>
