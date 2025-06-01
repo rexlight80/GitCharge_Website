@@ -47,10 +47,10 @@ const Payment = () => {
             <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>File search</span></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7' alt="check_icon"/></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7' alt="check_icon"/></div>
-            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Summarize code using AI more than twice</span></div>
+            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-center text-sm xl:text-base'>Summarize code using AI more than twice</span></div>
             <div className='w-full h-full border-1 border-[#000]'></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7 my-[0.8rem]' alt="check_icon"/></div>
-            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Bookmark more than 6 items</span></div>
+            <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-center text-sm xl:text-base'>Bookmark more than 6 items</span></div>
             <div className='w-full h-full border-1 border-[#000]'></div>
             <div className='w-full h-full border-1 border-[#000] flex items-center justify-center'><Image src={checkIcon} className='w-7 h-7 my-[0.8rem]' alt="check_icon"/></div>
             <div className='w-full h-full border-1 border-[#000] p-1 flex items-center justify-center'><span className='font-medium text-sm xl:text-base'>Price</span></div>
