@@ -60,8 +60,8 @@ export default function Home() {
           <LoadingModal reRouteType={isReRouteType}/>
         } */}
             <Image src={logoImg} alt='GitCharge_logo' className='xl:w-[8.4375rem] xl:h-[8.4375rem] w-[8rem] h-[8rem]'/>
-            <div className='w-full flex flex-col-reverse xl:flex-row gap-[4rem] items-center justify-between'>
-                <div className='xl:w-1/2 w-full flex flex-col gap-[1.3rem]'>
+            <div className='w-full flex flex-col-reverse xl:flex-row gap-[4rem] items-start justify-between'>
+                <div className='xl:w-1/2 w-full flex flex-col gap-[1.4rem]'>
                 <ul className='list-disc mx-auto'>
                     <li className='mt-2 font-medium text-lg'>Simple code review & exploring</li>
                     <li className='mt-2 font-medium text-lg'>Quick pull request access</li>
@@ -69,12 +69,15 @@ export default function Home() {
                     <li className='mt-2 font-medium text-lg'>File search</li>
                     <li className='mt-2 font-medium text-lg'>Summarize code using AI</li>
                     <li className='mt-2 font-medium text-lg'>Bookmark everything</li>
+                    <li className='mt-2 font-medium text-lg'>Quick access to all events for a project</li>
+                    <li className='mt-2 font-medium text-lg'>Post comment on a merge request quickly</li>
+                    <li className='mt-2 font-medium text-lg'>Summarize each new diff file line using AI</li>
                 </ul>
                  <DownloadBtn browser="chrome"/>
                  <DownloadBtn/>
                 </div>
                 
-                <VideoComponent src='/extPaySummary.mp4'/>
+                <VideoComponent src='/summarizeExt.mp4'/>
             
 
             </div>
@@ -148,6 +151,39 @@ export default function Home() {
                     </div>
                
                 <VideoComponent src='/searchExt2.mp4'/>
+
+                    
+                </div>
+
+                 <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Quick access to all events for a project:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Quick access to all visible events for a specified project.</span>
+                    </div>
+               
+                <VideoComponent src='/eventsList.mp4'/>
+
+                    
+                </div>
+
+                <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Post comment on a merge request quickly:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Quickly create a new note for a single merge request.</span>
+                    </div>
+               
+                <VideoComponent src='/mergeReqComment.mp4'/>
+
+                    
+                </div>
+
+                  <div className='w-full flex flex-col xl:flex-row gap-[4rem] justify-between'>
+                    <div className='flex flex-col gap-[1rem]'>
+                      <h1 className='text-[1.6rem] font-[400] text-wrap leading-[2.5rem]'>Summarize each new diff file line using AI:</h1>
+                      <span className='font-[350] text-xl text-wrap'>Scan each new line from diff files to summarize code down to the key points using AI</span>
+                    </div>
+               
+                <VideoComponent src='/newDiffLineSummary.mp4'/>
 
                     
                 </div>
