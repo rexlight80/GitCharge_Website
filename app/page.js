@@ -69,9 +69,9 @@ export default function Home() {
                     <li className='mt-2 font-medium text-lg'>File search</li>
                     <li className='mt-2 font-medium text-lg'>Summarize code using AI</li>
                     <li className='mt-2 font-medium text-lg'>Bookmark everything</li>
-                    <li className='mt-2 font-medium text-lg'>Quick access to all events for a project</li>
-                    <li className='mt-2 font-medium text-lg'>Post comment on a merge request quickly</li>
-                    <li className='mt-2 font-medium text-lg'>Summarize each new diff file line using AI</li>
+                    <li className='mt-2 font-medium text-lg'>Quick access to all events for a project <span className="text-sm text-gray-700">(only on chrome version)</span></li>
+                    <li className='mt-2 font-medium text-lg'>Post comment on a merge request quickly  <span className="text-sm text-gray-700">(only on chrome version)</span></li>
+                    <li className='mt-2 font-medium text-lg'>Summarize each new diff file line using AI  <span className="text-sm text-gray-700">(only on chrome version)</span></li>
                 </ul>
                  <DownloadBtn browser="chrome"/>
                  <DownloadBtn/>
