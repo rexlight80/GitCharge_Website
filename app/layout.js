@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-
+        <link rel="icon" href='/favicon/gitChargeIconSmall.png'/>
       </head>
       <body>
         <div className='w-screen h-screen bg-[#F9F6F2] pt-[2rem] px-[3.5rem]  xl:px-[5rem] overflow-y-auto flex flex-col relative'>
